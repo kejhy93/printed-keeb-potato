@@ -3,6 +3,9 @@
 A fully custom mechanical keyboard I'm designing, modeling and 3D printing myself,
 from the first layout sketch to the board I type on every day.
 
+The layout is designed with [Ergogen](https://ergogen.xyz), a tool that builds a
+keyboard from a YAML config: key positions, plate and case outlines, and even a PCB.
+
 ## Goals
 
 - Design a keyboard layout that fits my hands and workflow
@@ -16,7 +19,7 @@ from the first layout sketch to the board I type on every day.
 
 ## Roadmap
 
-- [ ] Layout design (key count, split/unibody, stagger)
+- [ ] Layout design in Ergogen (key count, split/unibody, stagger)
 - [ ] Choose switches, controller and firmware (e.g. QMK / ZMK)
 - [ ] 3D model of the case and plate
 - [ ] Test prints and fit checks
@@ -29,7 +32,7 @@ from the first layout sketch to the board I type on every day.
 
 | Folder      | Contents                               |
 |-------------|----------------------------------------|
-| `layout/`   | Layout files (e.g. KLE JSON, sketches) |
+| `layout/`   | Ergogen config (`config.yaml`)         |
 | `cad/`      | Source 3D models                       |
 | `stl/`      | Exported printable files               |
 | `firmware/` | Keymap and firmware config             |
